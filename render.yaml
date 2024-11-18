@@ -9,4 +9,5 @@ services:
       name: mysql_data
       sizeGB: 40 # Ajusta el tamaño según lo necesites
     healthCheckPath: /
-    port: 3307
+    port: 
+      - "3307:3306"
